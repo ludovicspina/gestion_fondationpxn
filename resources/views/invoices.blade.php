@@ -1,6 +1,8 @@
 @extends('base')
 @section('content')
-    <div class="text-xl">Factures</div>
+    <div class="flex justify-center">
+        <div class="bg-neutral-800 rounded-b-xl px-2 border-t-2 border-neutral-900">Factures</div>
+    </div>
     <form action="{{ route('addInvoice') }}" method="POST">
         @csrf
         <div class="flex gap-2">

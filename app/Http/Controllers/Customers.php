@@ -20,7 +20,7 @@ class Customers extends Controller
     public function addCustomer(Request $request)
     {
         $post = new Customer();
-        $post->number = $request->input('number');
+        $post->name = $request->input('name');
         $post->reference = $request->input('reference');
         $post->city = $request->input('city');
         $post->postal_code = $request->input('postal_code');

@@ -13,13 +13,16 @@
     <!-- Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="antialiased">
+<body class="antialiased bg-neutral-900 text-white">
 <header>
-    <div>
-        <a href="{{ route('home') }}">Accueil</a>
-        <a href="{{ route('customers') }}">Clients</a>
-        <a href="{{ route('invoices') }}">Factures</a>
-        <a href="{{ route('tasks') }}">Tâches</a>
+    <div class="flex items-center justify-center gap-10 bg-neutral-800">
+        <img src="{{ asset('logo.png') }}" alt="Logo Fondation PXN" class="h-20">
+        <div class="flex gap-4 text-white text-xl">
+            <a href="{{ route('home') }}">Accueil</a>
+            <a href="{{ route('customers') }}">Clients</a>
+            <a href="{{ route('invoices') }}">Factures</a>
+            <a href="{{ route('tasks') }}">Tâches</a>
+        </div>
     </div>
 </header>
 <main>
